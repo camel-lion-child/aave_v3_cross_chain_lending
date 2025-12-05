@@ -1,0 +1,10 @@
+This folder is intentionally empty in GitHub.
+
+Instead of storing CSV or Parquet inside the repository, I add a small placeholder file named `.gitkeep` in each folder. This technique is common in data engineering projects and allows the folder structure to be tracked by Git without storing actual datasets.
+
+Purpose of `.gitkeep`:
+
+- Ensure the `data/raw/` and `data/processed/` folders appear in the repo
+- Keep the repository structure clear and reproducible
+- Avoid committing large or mutable datasets
+- Inform users where the pipeline will write raw and processed files locally.
