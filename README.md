@@ -1,6 +1,7 @@
 # Aave V3 Cross-Chain Lending Analysis
 
 Overview
+
 This project analyzes cross-chain lending and deposit activity on Aave V3 using real on-chain data from **Dune Analytics**.
 
 Highlights:
