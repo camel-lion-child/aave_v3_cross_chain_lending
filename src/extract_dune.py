@@ -8,17 +8,15 @@ from dotenv import load_dotenv
 
 BASE_URL = "https://api.dune.com/api/v1"
 
-# 1️⃣ Load .env 
 load_dotenv(dotenv_path=Path(".env"))
 
-# 2️⃣ API key
 DUNE_API_KEY = os.getenv("DUNE_API_KEY")
 
 if DUNE_API_KEY is None:
     raise RuntimeError("DUNE_API_KEY is not set in .env")
 
 def run_dune_query(query_id: int, params: Optional[Dict[str, str]] = None) -> pd.DataFrame:
-    """Fetch results from a Dune query using the API."""
+
     headers = {"X-Dune-API-Key": DUNE_API_KEY}
     url = f"{BASE_URL}/query/{query_id}/results"
 
